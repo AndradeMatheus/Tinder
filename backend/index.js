@@ -35,5 +35,9 @@ app.use(
 );
 app.use(routes);
 
-server.listen(3333);
+const PORT = 3333;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
 console.log("rodando na porta 3333");
